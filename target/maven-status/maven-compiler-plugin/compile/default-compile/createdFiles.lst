@@ -1,0 +1,4 @@
+com\alexandr\demo\repos\MessageRepo.class
+com\alexandr\demo\GreetingController.class
+com\alexandr\demo\domain\Message.class
+com\alexandr\demo\Application.class

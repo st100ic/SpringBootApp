@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.alexandr.demo.DemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.292 s - in com.alexandr.demo.DemoApplicationTests
