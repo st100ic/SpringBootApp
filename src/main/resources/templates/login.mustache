@@ -5,16 +5,31 @@
 </head>
 <input type="hidden" name="_csrf" value="{{_csrf.token}}">
 <div align="center">hello user
+    </div>
 <br>
-<a href="/">main page</a>
-</div>
 <div align="center">
-<form action="/login" method="post">
-    <input type="hidden" name="_csrf" value="{{_csrf.token}}">
-    <div><label> User Name : <input type="text" name="username"/> </label></div>
-    <div><label> Password: <input type="password" name="password"/> </label></div>
-    <div><input type="submit" value="Sign In"/></div>
-</form>
+    <a href="/registration">add new user</a>
+    <form name="f" action="/perform-login" method="post">
+        <input type="hidden" name="_csrf" value="{{_csrf.token}}">
+
+
+        <fieldset>
+            <legend>log in</legend>
+            <label for="user">name</label>
+            <input type="text" id="user" name="user"/>
+            <label for="pass">password</label>
+            <input type="password" id="pass" name="pass"/>
+            <div class="form-actions">
+                <button type="submit" class="btn">log in</button>
+            </div>
+        </fieldset>
+    </form>
+    <!--<form action="/login" method="post">-->
+    <!--    <input type="hidden" name="_csrf" value="{{_csrf.token}}">-->
+    <!--    <div><label> User Name : <input type="text" name="username"/> </label></div>-->
+    <!--    <div><label> Password: <input type="password" name="password"/> </label></div>-->
+    <!--    <div><input type="submit" value="Sign In"/></div>-->
+    <!--</form>-->
 </div>
 </body>
 </html>

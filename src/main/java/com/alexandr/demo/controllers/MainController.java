@@ -6,16 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.stereotype.Controller;
 
-import org.springframework.web.HttpRequestHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 @Controller
-public class GreetingController {
+public class MainController {
     @Autowired
     private MessageRepo messageRepo;
 
@@ -58,6 +56,18 @@ public class GreetingController {
         return "main";
 
     }
+
+
+
+    @GetMapping("/login")
+    public String loginPage(){
+        return "login";
+    }
+    @GetMapping("/403")
+    public String forbidenPage(){
+        return "403";
+    }
+
 
 
 }

@@ -24,32 +24,11 @@ import java.net.PasswordAuthentication;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-//        httpSecurity.authorizeRequests()
-//                .antMatchers("/")
-//                .permitAll()
-//                .anyRequest()
-//                .authenticated()
-//                .and()
-//                .formLogin()
-//                .loginPage("login")
-//                .permitAll()
-//                .and()
-//                .logout()
-//                .permitAll();
-
-
-//
-//        auth.inMemoryAuthentication()
-//                .withUser("user")
-//                .password("password")
-//                .roles("admin");
-
-
         auth.jdbcAuthentication()
                 .passwordEncoder(NoOpPasswordEncoder.getInstance())
                 .dataSource(dataSource)
-                .usersByUsernameQuery("select username, password, enabled from usr where username=?")
-                .authoritiesByUsernameQuery("select username, role from usr where username=?")
+                .usersByUsernameQuery("select username, password, enabled from users where username=?")
+                .authoritiesByUsernameQuery("select u.username, ur.role from users u inner join user_role ur on u.id = ur.user_id where username=?")
         ;
 
     }
@@ -59,20 +38,24 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/").permitAll()
+                .antMatchers("/registration").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
                 .loginPage("/login")
+                .loginProcessingUrl("/perform-login")
+                .usernameParameter("user")
+                .passwordParameter("pass")
+                .defaultSuccessUrl("/")
+                .failureUrl("/login_error")
                 .permitAll()
                 .and()
                 .logout().permitAll()
                 .and()
+                .exceptionHandling().accessDeniedPage("/403")
 
         ;
 
-//                .antMatchers("/admin").hasRole("ADMIN")
-//                .antMatchers("/user").hasAnyRole("ADMIN", "USER")
-//                .antMatchers("/").permitAll()
     }
 
 
