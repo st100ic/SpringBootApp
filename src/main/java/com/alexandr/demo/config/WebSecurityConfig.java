@@ -29,6 +29,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .dataSource(dataSource)
                 .usersByUsernameQuery("select username, password, enabled from users where username=?")
                 .authoritiesByUsernameQuery("select u.username, ur.role from users u inner join user_role ur on u.id = ur.user_id where username=?")
+//                .authoritiesByUsernameQuery("select u.username, ur.role from users u inner join user_role ur on u.id = ur.user_id where username=?")
         ;
 
     }
@@ -47,8 +48,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .usernameParameter("user")
                 .passwordParameter("pass")
                 .defaultSuccessUrl("/")
-                .failureUrl("/login_error")
-                .permitAll()
+                .failureUrl("/login_error").permitAll()
                 .and()
                 .logout().permitAll()
                 .and()
