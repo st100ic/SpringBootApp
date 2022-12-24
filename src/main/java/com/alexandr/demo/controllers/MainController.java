@@ -31,7 +31,18 @@ public class MainController {
 		model.put("messages", messages);
 		return "main";
 	}
-
+    @GetMapping("/ttt")
+    public String test(){
+        return "test";
+    }
+    @GetMapping("/ccc")
+    public String testcover(){
+        return "testcover";
+    }
+    @GetMapping("/log")
+    public String log(){
+        return "logintwo";
+    }
 
 
     @PostMapping("/")

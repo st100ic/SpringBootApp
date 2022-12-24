@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <head>
+    <link rel="stylesheet" type="text/css" href="cover.css" media=”screen” />
     <title>Getting Started: Serving Web Content</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
@@ -12,7 +13,6 @@
     <form name="f" action="/perform-login" method="post">
         <input type="hidden" name="_csrf" value="{{_csrf.token}}">
 
-
         <fieldset>
             <legend>log in</legend>
             <label for="user">name</label>
@@ -23,6 +23,7 @@
                 <button type="submit" class="btn">log in</button>
             </div>
         </fieldset>
+
     </form>
     <!--<form action="/login" method="post">-->
     <!--    <input type="hidden" name="_csrf" value="{{_csrf.token}}">-->
@@ -33,3 +34,6 @@
 </div>
 </body>
 </html>
+
+
+
