@@ -27,9 +27,9 @@ public class MainController {
 		model.put("messages", messages);
 		return "main";
 	}
-    @GetMapping("/ttt")
-    public String test(){
-        return "test";
+    @GetMapping("/features")
+    public String features(){
+        return "features";
     }
     @GetMapping("/contact")
     public String contact(){

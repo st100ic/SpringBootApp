@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c136969-b9d9-4dba-b0d9-ff04dd39e75b" name="Changes" comment="css styles">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBoot/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBoot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/alexandr/demo/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/alexandr/demo/config/MvcConfig.java" afterDir="false" />
@@ -24,18 +22,14 @@
       <change beforePath="$PROJECT_DIR$/../SpringBoot/target/classes/templates/greeting.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/target/classes/templates/greeting.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBoot/target/classes/templates/login.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/target/classes/templates/login.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/alexandr/demo/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexandr/demo/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/403.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/403.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login_error.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login_error.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/logintwo.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testcover.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/maintwo.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/greeting.mustache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/maintwo.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/maintwo.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/test.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/features.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/alexandr/demo/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alexandr/demo/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/contact.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/contact.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/maintwo.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/maintwo.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/test.mustache" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,18 +206,27 @@
                   <entry key="Show.Git.Branches" value="false" />
                 </map>
               </option>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
