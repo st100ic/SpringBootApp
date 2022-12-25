@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c136969-b9d9-4dba-b0d9-ff04dd39e75b" name="Changes" comment="registration,logging are working final">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/logintwo.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/test.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/testcover.mustache" afterDir="false" />
+    <list default="true" id="8c136969-b9d9-4dba-b0d9-ff04dd39e75b" name="Changes" comment="css styles">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_7_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBoot/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBoot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/alexandr/demo/config/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/alexandr/demo/config/MvcConfig.java" afterDir="false" />
@@ -26,11 +24,17 @@
       <change beforePath="$PROJECT_DIR$/../SpringBoot/target/classes/templates/greeting.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/target/classes/templates/greeting.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SpringBoot/target/classes/templates/login.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot/target/classes/templates/login.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/alexandr/demo/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexandr/demo/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/alexandr/demo/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/alexandr/demo/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/403.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/403.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.mustache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/alexandr/demo/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/alexandr/demo/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login_error.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login_error.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/logintwo.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/testcover.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/maintwo.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/greeting.mustache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/login.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.mustache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,24 +79,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Alexandr/BSUIR/TestApp",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.1150748",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Alexandr/BSUIR/TestApp&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.1150748&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;module&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Alexandr\BSUIR\SpringBoot\src\main\java\com\alexandr\demo\domain" />
@@ -231,7 +235,8 @@
     <MESSAGE value="logging" />
     <MESSAGE value="in case db fails" />
     <MESSAGE value="registration,logging are working final" />
-    <option name="LAST_COMMIT_MESSAGE" value="registration,logging are working final" />
+    <MESSAGE value="css styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="css styles" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpringBoot___Copy$com_alexandr_demo_Application.ic" NAME="com.alexandr.demo.Application Coverage Results" MODIFIED="1670871796835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

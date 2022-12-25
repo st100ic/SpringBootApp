@@ -17,15 +17,11 @@ public class MainController {
     @Autowired
     private MessageRepo messageRepo;
 
-    @GetMapping("/greeting")
-    public String greeting
-            (@RequestParam(name = "name", required = false, defaultValue = "World") String name,
-             Map<String, Object> model) {
-        model.put("name", name);
-        return "greeting";
+    @GetMapping("/")
+    public String maintwo(){
+        return "maintwo";
     }
-
-	@GetMapping("/")
+	@GetMapping("/main")
 	public String main(Map<String,Object>model){
 		Iterable<Message> messages = messageRepo.findAll();
 		model.put("messages", messages);
@@ -35,23 +31,37 @@ public class MainController {
     public String test(){
         return "test";
     }
-    @GetMapping("/ccc")
-    public String testcover(){
-        return "testcover";
-    }
-    @GetMapping("/log")
-    public String log(){
-        return "logintwo";
+    @GetMapping("/contact")
+    public String contact(){
+        return "contact";
     }
 
 
-    @PostMapping("/")
+
+
+
+    @GetMapping("/login")
+    public String loginPage(){
+        return "login";
+    }
+    @GetMapping("/403")
+    public String forbidenPage(){
+        return "403";
+    }
+
+
+
+
+
+
+
+
+    @PostMapping("/main")
     public String Add(@RequestParam String text, @RequestParam String tag, Map<String, Object> model) {
         Message message = new Message(text, tag);
         messageRepo.save(message);
         Iterable<Message> messages = messageRepo.findAll();
         model.put("messages", messages);
-
         return "main";
     }
 
@@ -65,19 +75,9 @@ public class MainController {
         }
         model.put("messages", messages);
         return "main";
-
     }
 
 
-
-    @GetMapping("/login")
-    public String loginPage(){
-        return "login";
-    }
-    @GetMapping("/403")
-    public String forbidenPage(){
-        return "403";
-    }
 
 
 
